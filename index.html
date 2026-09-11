@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Fruit Ninja</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+overflow:hidden;
+background:linear-gradient(#6ec6ff,#b3e5fc);
+font-family:Arial,sans-serif;
+touch-action:none;
+}
+
+#game{
+position:relative;
+width:100vw;
+height:100vh;
+overflow:hidden;
+}
+
+#score{
+position:absolute;
+top:15px;
+left:15px;
+font-size:28px;
+font-weight:bold;
+color:white;
+text-shadow:2px 2px 5px black;
+z-index:100;
+}
+
+#lives{
+position:absolute;
+top:55px;
+left:15px;
+font-size:28px;
+color:red;
+z-index:100;
+}
+
+.fruit{
+position:absolute;
+font-size:55px;
+user-select:none;
+}
+
+#gameOver{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,.8);
+padding:25px;
+border-radius:15px;
+display:none;
+text-align:center;
+color:white;
+z-index:500;
+}
+
+button{
+padding:10px 20px;
+font-size:20px;
+margin-top:15px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div id="game">
+
+<div id="score">Score : 0</div>
+<div id="lives">❤️❤️❤️</div>
+
+<div id="gameOver">
+<h1>Game Over</h1>
+<button onclick="location.reload()">Restart</button>
+</div>
+
+<script>
+
+const game=document.getElementById("game");
+const scoreText=document.getElementById("score");
+const livesText=document.getElementById("lives");
+const gameOver=document.getElementById("gameOver");
+
+let score=0;
+let lives=3;
+let running=true;
+
+const fruits=["🍎","🍌","🍉","🍓"];
+
+function spawn(){
+
+if(!running)return;
+
+const fruit=document.createElement("div");
+fruit.className="fruit";
+
+if(Math.random()<0.2){
+fruit.innerHTML="💣";
+}else{
+fruit.innerHTML=fruits[Math.floor(Math.random()*fruits.length)];
+}
+
+fruit.x=Math.random()*(window.innerWidth-60);
+fruit.y=window.innerHeight;
+fruit.vx=(Math.random()*6)-3;
+fruit.vy=-16-Math.random()*4;
+
+fruit.style.left=fruit.x+"px";
+fruit.style.top=fruit.y+"px";
+
+game.appendChild(fruit);
+
+const move=setInterval(()=>{
+
+fruit.vy+=0.35;
+
+fruit.x+=fruit.vx;
+fruit.y+=fruit.vy;
+
+fruit.style.left=fruit.x+"px";
+fruit.style.top=fruit.y+"px";
+if(fruit.y>window.innerHeight+80){
+
+clearInterval(move);
+
+fruit.remove();
+
+if(fruit.innerHTML!="💣"){
+
+lives--;
+
+livesText.innerHTML="❤️".repeat(lives);
+
+if(lives<=0){
+
+running=false;
+
+gameOver.style.display="block";
+
+}
+
+}
+
+}
+
+},20);
+
+fruit.addEventListener("pointerdown",()=>{
+
+if(!running)return;
+
+clearInterval(move);
+
+if(fruit.innerHTML=="💣"){
+
+running=false;
+
+gameOver.style.display="block";
+
+}else{
+
+score++;
+
+scoreText.innerHTML="Score : "+score;
+
+}
+
+fruit.remove();
+
+});
+
+}
+
+setInterval(spawn,900);
+
+</script>
+
+</div>
+
+</body>
+</html>
