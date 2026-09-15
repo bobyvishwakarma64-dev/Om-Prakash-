@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chapter 03 | Drainage System — Om Prakash Teaching</title>
+<title>Om Prakash Teaching | Premium Learning App</title>
+<meta name="description" content="Om Prakash Teaching premium online learning app with courses, classes, notes, tests and progress tracking.">
+<meta name="keywords" content="Om Prakash Teaching, online classes, education, courses, notes, quiz, geography, drainage system">
 
-<meta name="description" content="Class 11 Geography Chapter 03 Drainage System premium study notes.">
 <meta name="theme-color" content="#6d4aff">
 
 <style>
@@ -14,13 +15,12 @@
   --primary:#6d4aff;
   --primary2:#9275ff;
   --bg:#f5f6fb;
-  --card:#ffffff;
-  --text:#171a28;
-  --muted:#73798a;
-  --border:#e7e8ef;
-  --soft:#efecff;
-  --success:#0e9f6e;
-  --shadow:0 14px 40px rgba(30,20,80,.09);
+  --card:#fff;
+  --text:#171b2b;
+  --muted:#747b8d;
+  --border:#e8e9f0;
+  --soft:#f0edff;
+  --shadow:0 12px 35px rgba(35,25,80,.08);
 }
 
 *{
@@ -30,38 +30,28 @@
   font-family:Arial,Helvetica,sans-serif;
 }
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   background:var(--bg);
   color:var(--text);
   min-height:100vh;
-  padding-bottom:90px;
+  overflow-x:hidden;
 }
 
-button,input{
-  font:inherit;
-}
-
-button{
-  cursor:pointer;
-}
-
-.hidden{
-  display:none!important;
-}
+button,input{font:inherit}
+button{cursor:pointer}
+.hidden{display:none!important}
 
 /* HEADER */
 
 .header{
   background:
-  radial-gradient(circle at 10% 10%,rgba(255,255,255,.18),transparent 25%),
-  radial-gradient(circle at 90% 20%,rgba(255,255,255,.13),transparent 25%),
-  linear-gradient(135deg,#5130d2,#7653ed,#9874ff);
+    radial-gradient(circle at 10% 10%,rgba(255,255,255,.18),transparent 25%),
+    radial-gradient(circle at 90% 20%,rgba(255,255,255,.12),transparent 25%),
+    linear-gradient(135deg,#5732dc,#7757ef,#956fff);
   color:#fff;
-  padding:20px 18px 125px;
+  padding:20px 18px 115px;
   position:relative;
   overflow:hidden;
 }
@@ -75,25 +65,21 @@ button{
 }
 
 .header:before{
-  width:250px;
-  height:250px;
-  right:-110px;
-  top:-100px;
+  width:220px;height:220px;
+  right:-90px;top:-80px;
 }
 
 .header:after{
-  width:190px;
-  height:190px;
-  left:-120px;
-  bottom:-100px;
+  width:180px;height:180px;
+  left:-110px;bottom:-100px;
 }
 
 .topbar{
   max-width:1100px;
   margin:auto;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
   position:relative;
   z-index:2;
 }
@@ -104,168 +90,208 @@ button{
   gap:11px;
 }
 
-.logo{
-  width:45px;
-  height:45px;
-  border-radius:15px;
-  background:rgba(255,255,255,.17);
-  border:1px solid rgba(255,255,255,.2);
+.brand-logo{
+  width:45px;height:45px;
+  border-radius:14px;
   display:flex;
   align-items:center;
   justify-content:center;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.2);
   font-size:23px;
 }
 
-.brand h2{
-  font-size:17px;
-}
+.brand-text{font-size:18px;font-weight:800}
 
-.brand small{
+.brand-sub{
+  display:block;
   font-size:9px;
-  opacity:.7;
-  letter-spacing:1px;
+  opacity:.75;
+  margin-top:3px;
 }
 
-.actions{
-  display:flex;
-  gap:8px;
-}
+.top-actions{display:flex;gap:8px}
 
-.icon-btn{
-  width:42px;
-  height:42px;
+.circle-btn{
+  width:42px;height:42px;
   border:1px solid rgba(255,255,255,.2);
   background:rgba(255,255,255,.14);
   color:#fff;
   border-radius:13px;
+  font-size:18px;
 }
-
-/* HERO */
 
 .hero{
   max-width:1100px;
-  margin:45px auto 0;
+  margin:48px auto 0;
   position:relative;
   z-index:2;
 }
 
-.chapter-label{
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:1.5px;
-  opacity:.75;
-  margin-bottom:10px;
+.hero-small{
+  font-size:13px;
+  opacity:.82;
+  margin-bottom:8px;
 }
 
 .hero h1{
-  font-size:clamp(32px,7vw,56px);
-  line-height:1.05;
-  letter-spacing:-2px;
+  font-size:clamp(29px,6vw,48px);
+  line-height:1.12;
+  letter-spacing:-1.5px;
 }
 
-.hero h1 span{
-  color:#e9e1ff;
-}
+.hero h1 span{color:#e9e2ff}
 
 .hero p{
-  max-width:650px;
-  margin-top:15px;
+  margin-top:12px;
+  max-width:600px;
   line-height:1.6;
   font-size:14px;
-  opacity:.82;
+  opacity:.84;
 }
 
 /* MAIN */
 
 .container{
   max-width:1100px;
-  margin:-75px auto 0;
+  margin:-72px auto 110px;
   padding:0 16px;
   position:relative;
-  z-index:5;
+  z-index:3;
 }
 
 /* SEARCH */
 
-.search{
-  background:rgba(255,255,255,.96);
+.search-box{
+  background:rgba(255,255,255,.95);
   border:1px solid rgba(255,255,255,.8);
-  border-radius:19px;
+  box-shadow:var(--shadow);
+  border-radius:18px;
   padding:7px;
   display:flex;
   align-items:center;
-  box-shadow:var(--shadow);
+  gap:5px;
   backdrop-filter:blur(20px);
 }
 
-.search span{
-  width:42px;
+.search-icon{
+  width:43px;
   text-align:center;
+  font-size:18px;
 }
 
-.search input{
+.search-box input{
   flex:1;
   border:0;
   outline:0;
-  padding:13px 5px;
   background:transparent;
+  padding:13px 5px;
   color:var(--text);
 }
 
-/* INFO CARD */
+.filter-btn{
+  border:0;
+  background:var(--soft);
+  color:var(--primary);
+  padding:12px 14px;
+  border-radius:13px;
+  font-weight:700;
+}
 
-.info-card{
-  margin-top:16px;
-  padding:20px;
+/* WELCOME */
+
+.welcome{
+  margin-top:18px;
   background:var(--card);
-  border:1px solid var(--border);
   border-radius:23px;
+  padding:20px;
   box-shadow:var(--shadow);
-}
-
-.info-top{
   display:flex;
-  gap:15px;
   align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  overflow:hidden;
+  position:relative;
 }
 
-.subject-icon{
-  width:60px;
-  height:60px;
+.welcome:after{
+  content:"";
+  position:absolute;
+  width:160px;height:160px;
+  right:-80px;top:-80px;
+  border-radius:50%;
+  background:#eeeaff;
+}
+
+.welcome-text{
+  position:relative;
+  z-index:2;
+}
+
+.tag{
+  display:inline-block;
+  background:var(--soft);
+  color:var(--primary);
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:9px;
+  font-weight:800;
+  margin-bottom:9px;
+}
+
+.welcome h2{
+  font-size:21px;
+  margin-bottom:6px;
+}
+
+.welcome p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+
+.teacher-avatar{
+  width:70px;height:70px;
   flex-shrink:0;
-  border-radius:19px;
+  border-radius:22px;
   background:linear-gradient(135deg,#6d4aff,#a78bfa);
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:30px;
+  font-size:35px;
+  box-shadow:0 10px 25px rgba(109,74,255,.25);
+  position:relative;
+  z-index:2;
 }
 
-.info-card h2{
-  font-size:21px;
+/* SECTIONS */
+
+.section{margin-top:30px}
+
+.section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:15px;
 }
 
-.info-card p{
-  margin-top:5px;
-  color:var(--muted);
+.section-head h2{font-size:20px}
+
+.section-head p,
+.view-all{
   font-size:12px;
-  line-height:1.5;
+  color:var(--primary);
+  font-weight:700;
 }
 
-.reference{
-  margin-top:16px;
-  padding:12px 14px;
-  border-radius:13px;
-  background:var(--soft);
-  color:#5141a3;
-  font-size:10px;
-  line-height:1.5;
+.view-all{
+  background:none;
+  border:0;
 }
 
 /* STATS */
 
 .stats{
-  margin-top:16px;
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:10px;
@@ -274,188 +300,298 @@ button{
 .stat{
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:17px;
-  padding:15px 8px;
+  border-radius:18px;
+  padding:17px 10px;
   text-align:center;
   box-shadow:var(--shadow);
 }
 
-.stat b{
-  display:block;
+.stat-icon{
   font-size:20px;
-  margin-bottom:4px;
+  margin-bottom:7px;
+}
+
+.stat strong{
+  display:block;
+  font-size:22px;
 }
 
 .stat span{
   color:var(--muted);
-  font-size:10px;
+  font-size:11px;
 }
 
-/* SECTION */
+/* COURSES */
 
-.section{
-  margin-top:30px;
-}
-
-.section-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:14px;
-}
-
-.section-head h2{
-  font-size:20px;
-}
-
-.section-head span{
-  font-size:10px;
-  color:var(--primary);
-  font-weight:800;
-}
-
-/* TOPICS */
-
-.topic-grid{
+.course-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:13px;
+  gap:14px;
 }
 
-.topic{
+.course{
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:21px;
-  padding:17px;
+  border-radius:22px;
+  overflow:hidden;
   box-shadow:var(--shadow);
   transition:.25s;
 }
 
-.topic:hover{
-  transform:translateY(-3px);
+.course:hover{transform:translateY(-4px)}
+
+.course-cover{
+  height:105px;
+  padding:15px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
 }
 
-.topic-number{
-  width:38px;
-  height:38px;
-  border-radius:12px;
-  background:var(--soft);
-  color:var(--primary);
+.cover-purple{background:linear-gradient(135deg,#5934dd,#9b7dff)}
+.cover-blue{background:linear-gradient(135deg,#2563eb,#60a5fa)}
+.cover-green{background:linear-gradient(135deg,#059669,#34d399)}
+.cover-orange{background:linear-gradient(135deg,#ea580c,#fb923c)}
+
+.course-icon{
+  width:48px;height:48px;
+  border-radius:15px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-weight:900;
-  font-size:12px;
+  background:rgba(255,255,255,.20);
+  color:#fff;
+  font-size:25px;
 }
 
-.topic h3{
-  font-size:15px;
-  margin-top:13px;
+.level{
+  color:#fff;
+  font-size:9px;
+  padding:6px 9px;
+  background:rgba(0,0,0,.16);
+  border-radius:20px;
 }
 
-.topic p{
+.course-body{padding:16px}
+
+.course-body h3{
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+.course-body p{
   color:var(--muted);
-  font-size:11px;
+  font-size:12px;
   line-height:1.5;
-  margin-top:5px;
+  min-height:36px;
 }
 
-.open-btn{
+.course-info{
+  display:flex;
+  justify-content:space-between;
+  margin-top:12px;
+  color:var(--muted);
+  font-size:10px;
+}
+
+.course-progress{
+  margin-top:11px;
+  height:6px;
+  background:#ececf2;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.course-progress div{
+  height:100%;
+  background:var(--primary);
+  border-radius:20px;
+}
+
+.course-btn{
   width:100%;
   margin-top:13px;
   border:0;
-  background:var(--primary);
-  color:#fff;
-  padding:11px;
+  background:var(--soft);
+  color:var(--primary);
   border-radius:12px;
-  font-size:11px;
+  padding:11px;
+  font-size:12px;
   font-weight:800;
 }
 
-/* NOTE PREVIEW */
+/* FEATURES */
 
-.note-preview{
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:13px;
+}
+
+.feature{
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:22px;
-  padding:20px;
+  padding:18px;
+  border-radius:20px;
   box-shadow:var(--shadow);
 }
 
-.note-preview h3{
-  font-size:17px;
-  margin-bottom:9px;
-}
-
-.note-preview p{
-  color:var(--muted);
-  font-size:12px;
-  line-height:1.7;
-}
-
-.key-box{
-  margin-top:13px;
-  padding:14px;
-  background:var(--soft);
+.feature-icon{
+  width:44px;height:44px;
   border-radius:14px;
+  background:var(--soft);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  margin-bottom:13px;
+}
+
+.feature h3{
+  font-size:15px;
+  margin-bottom:6px;
+}
+
+.feature p{
+  color:var(--muted);
   font-size:11px;
-  line-height:1.7;
+  line-height:1.5;
 }
 
-.key-box b{
+/* LECTURES */
+
+.lecture-list{
+  display:grid;
+  gap:11px;
+}
+
+.lecture{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:13px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  box-shadow:var(--shadow);
+}
+
+.play{
+  width:50px;height:50px;
+  flex-shrink:0;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--soft);
   color:var(--primary);
+  font-size:21px;
 }
 
-/* EXAM BOX */
+.lecture h3{
+  font-size:13px;
+  margin-bottom:4px;
+}
 
-.exam{
-  background:linear-gradient(135deg,#19142d,#3b2a70);
+.lecture p{
+  color:var(--muted);
+  font-size:10px;
+}
+
+.lecture button{
+  margin-left:auto;
+  border:0;
+  background:var(--primary);
   color:#fff;
-  padding:21px;
+  padding:9px 12px;
+  border-radius:10px;
+  font-size:10px;
+  font-weight:700;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement{
+  background:linear-gradient(135deg,#18142c,#33275f);
+  color:#fff;
   border-radius:23px;
+  padding:20px;
   position:relative;
   overflow:hidden;
-  box-shadow:var(--shadow);
 }
 
-.exam:after{
+.announcement:after{
   content:"";
-  width:180px;
-  height:180px;
-  border-radius:50%;
-  background:rgba(255,255,255,.07);
   position:absolute;
-  right:-80px;
-  top:-80px;
+  width:170px;height:170px;
+  border-radius:50%;
+  right:-80px;top:-80px;
+  background:rgba(255,255,255,.08);
 }
 
-.exam small{
-  opacity:.65;
-  font-size:9px;
-  letter-spacing:1px;
-}
+.announcement small{opacity:.65}
 
-.exam h3{
-  margin-top:8px;
-  font-size:20px;
-}
-
-.exam p{
+.announcement h3{
   margin-top:7px;
-  opacity:.72;
-  font-size:11px;
-  line-height:1.6;
+  font-size:19px;
 }
 
-.exam button{
+.announcement p{
+  margin-top:7px;
+  font-size:12px;
+  opacity:.75;
+  line-height:1.5;
+}
+
+.announcement button{
   border:0;
   background:#fff;
-  color:#382c70;
-  padding:11px 15px;
+  color:#30265b;
+  margin-top:15px;
+  padding:10px 15px;
   border-radius:11px;
-  margin-top:14px;
   font-size:11px;
   font-weight:800;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+  position:fixed;
+  left:50%;
+  bottom:12px;
+  transform:translateX(-50%);
+  width:min(94%,520px);
+  background:rgba(255,255,255,.94);
+  border:1px solid rgba(255,255,255,.8);
+  box-shadow:0 15px 45px rgba(0,0,0,.14);
+  backdrop-filter:blur(20px);
+  border-radius:22px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:8px;
+  z-index:30;
+}
+
+.nav-item{
+  border:0;
+  background:transparent;
+  padding:8px 4px;
+  border-radius:15px;
+  color:#888e9c;
+  font-size:10px;
+  font-weight:600;
+}
+
+.nav-icon{
+  display:block;
+  font-size:20px;
+  margin-bottom:3px;
+}
+
+.nav-item.active{
+  color:var(--primary);
+  background:var(--soft);
 }
 
 /* MODAL */
@@ -463,112 +599,304 @@ button{
 .modal{
   position:fixed;
   inset:0;
-  background:rgba(8,8,18,.68);
+  background:rgba(10,10,20,.65);
   backdrop-filter:blur(8px);
   display:none;
   align-items:flex-end;
   justify-content:center;
-  padding:12px;
+  padding:15px;
   z-index:100;
 }
 
-.modal.show{
-  display:flex;
-}
+.modal.show{display:flex}
 
 .modal-box{
-  width:min(100%,680px);
+  width:min(100%,700px);
   max-height:92vh;
   overflow:auto;
   background:var(--card);
   color:var(--text);
-  border-radius:27px;
+  border-radius:28px 28px 20px 20px;
   padding:22px;
-  animation:up .25s ease;
+  animation:slideUp .25s ease;
 }
 
-@keyframes up{
-  from{
-    transform:translateY(40px);
-    opacity:0;
-  }
-  to{
-    transform:translateY(0);
-    opacity:1;
-  }
+@keyframes slideUp{
+  from{transform:translateY(35px);opacity:0}
+  to{transform:translateY(0);opacity:1}
 }
 
-.modal-header{
+.modal-top{
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  margin-bottom:19px;
+  justify-content:space-between;
+  margin-bottom:20px;
 }
 
-.modal-header h2{
-  font-size:20px;
-}
+.modal-top h2{font-size:20px}
 
 .close{
-  width:37px;
-  height:37px;
   border:0;
-  border-radius:11px;
   background:#f0f0f5;
+  width:36px;height:36px;
+  border-radius:11px;
   font-size:20px;
 }
 
-/* NOTE CONTENT */
+/* LESSON */
 
-.note-content{
-  line-height:1.75;
+.lesson-video{
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 50% 35%,rgba(255,255,255,.15),transparent 25%),
+    linear-gradient(135deg,#19152d,#44347d);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  overflow:hidden;
+  position:relative;
 }
 
-.note-content .badge{
-  display:inline-block;
-  background:var(--soft);
+.lesson-video:before{
+  content:"";
+  position:absolute;
+  width:170px;height:170px;
+  border-radius:50%;
+  background:rgba(255,255,255,.06);
+  top:-80px;right:-60px;
+}
+
+.big-play{
+  width:70px;height:70px;
+  border:0;
+  border-radius:50%;
+  background:#fff;
   color:var(--primary);
-  border-radius:8px;
-  padding:6px 10px;
-  font-size:9px;
-  font-weight:900;
-  margin-bottom:10px;
+  font-size:27px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  position:relative;
+  z-index:2;
 }
 
-.note-content h2{
-  font-size:23px;
-  margin-bottom:9px;
+.lesson-video h3,
+.lesson-video p{
+  position:relative;
+  z-index:2;
 }
 
-.note-content h3{
-  margin-top:22px;
+.lesson-video h3{margin-top:13px}
+.lesson-video p{font-size:11px;opacity:.7;margin-top:5px}
+
+.lesson-content{margin-top:20px}
+
+.lesson-content h2{
+  font-size:21px;
   margin-bottom:8px;
-  font-size:16px;
 }
 
-.note-content p,
-.note-content li{
+.lesson-content p{
   color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.lesson-points{
+  margin-top:18px;
+  display:grid;
+  gap:9px;
+}
+
+.point{
+  padding:13px;
+  background:#fafafd;
+  border:1px solid var(--border);
+  border-radius:14px;
+  font-size:12px;
+}
+
+.complete-btn{
+  width:100%;
+  border:0;
+  background:var(--primary);
+  color:#fff;
+  padding:14px;
+  border-radius:14px;
+  margin-top:18px;
+  font-weight:800;
+}
+
+/* NOTES */
+
+.notes{
+  background:#fffdf5;
+  border:1px solid #f0e6b9;
+  border-radius:18px;
+  padding:18px;
+  line-height:1.7;
+}
+
+.notes h3{
+  margin-bottom:10px;
+  font-size:19px;
+}
+
+.notes p{
+  color:#555;
   font-size:13px;
 }
 
-.note-content ul{
+.notes ul{
   padding-left:20px;
+  margin-top:10px;
 }
 
-.note-content li{
-  margin-bottom:6px;
+.notes li{
+  margin-bottom:7px;
+  font-size:13px;
+  color:#555;
+}
+
+.download-note{
+  width:100%;
+  border:0;
+  background:var(--primary);
+  color:#fff;
+  padding:13px;
+  border-radius:13px;
+  margin-top:15px;
+  font-weight:700;
+}
+
+/* CHAPTER 03 */
+
+.chapter-hero{
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,255,255,.14),transparent 25%),
+    linear-gradient(135deg,#17132c,#30235e,#6d4aff);
+  color:#fff;
+  padding:22px;
+  border-radius:22px;
+  margin-bottom:18px;
+}
+
+.chapter-label{
+  font-size:9px;
+  letter-spacing:1.5px;
+  opacity:.7;
+  font-weight:800;
+}
+
+.chapter-hero h2{
+  font-size:25px;
+  margin-top:8px;
+}
+
+.chapter-hero p{
+  font-size:12px;
+  line-height:1.6;
+  opacity:.78;
+  margin-top:8px;
+}
+
+.chapter-topic-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:11px;
+}
+
+.topic-card{
+  border:1px solid var(--border);
+  background:var(--card);
+  border-radius:18px;
+  padding:15px;
+  box-shadow:var(--shadow);
+  transition:.2s;
+}
+
+.topic-card:hover{
+  transform:translateY(-3px);
+  border-color:var(--primary);
+}
+
+.topic-number{
+  font-size:10px;
+  color:var(--primary);
+  font-weight:900;
+}
+
+.topic-card h3{
+  font-size:14px;
+  margin-top:7px;
+}
+
+.topic-card p{
+  font-size:10px;
+  color:var(--muted);
+  margin-top:5px;
+  line-height:1.5;
+}
+
+.topic-open{
+  border:0;
+  background:var(--soft);
+  color:var(--primary);
+  padding:8px 10px;
+  border-radius:9px;
+  margin-top:10px;
+  font-size:10px;
+  font-weight:800;
+}
+
+.concept-section{
+  margin-top:15px;
+  border:1px solid var(--border);
+  background:var(--card);
+  border-radius:20px;
+  padding:17px;
+}
+
+.concept-section h3{
+  font-size:17px;
+  margin-bottom:9px;
+}
+
+.concept-section p{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.concept-section ul{
+  padding-left:20px;
+  margin-top:9px;
+}
+
+.concept-section li{
+  font-size:12px;
+  color:var(--muted);
+  margin:6px 0;
+  line-height:1.55;
 }
 
 .definition{
-  margin-top:12px;
-  padding:15px;
-  background:var(--soft);
+  margin-top:11px;
+  padding:13px;
   border-left:4px solid var(--primary);
-  border-radius:12px;
+  background:var(--soft);
+  border-radius:10px;
+  font-size:12px;
+  line-height:1.6;
 }
 
-.compare{
+.compare-table{
   width:100%;
   border-collapse:collapse;
   margin-top:12px;
@@ -576,134 +904,124 @@ button{
   overflow:hidden;
 }
 
-.compare th,
-.compare td{
+.compare-table th,
+.compare-table td{
   border:1px solid var(--border);
-  padding:10px;
+  padding:9px;
   text-align:left;
   vertical-align:top;
 }
 
-.compare th{
+.compare-table th{
   background:var(--soft);
   color:var(--primary);
 }
 
-.important{
-  margin-top:14px;
-  padding:14px;
-  border-radius:14px;
-  background:#fff7dd;
-  border:1px solid #f0dfa2;
-  color:#67541b;
-  font-size:12px;
-  line-height:1.6;
+.river-card{
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:13px;
+  margin-top:10px;
+  background:rgba(109,74,255,.025);
+}
+
+.river-card h4{
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.river-card p{
+  font-size:11px;
+}
+
+.exam-box{
+  background:linear-gradient(135deg,#18142c,#33275f);
+  color:#fff;
+  border-radius:18px;
+  padding:17px;
+  margin-top:15px;
+}
+
+.exam-box h3{
+  font-size:16px;
+  margin-bottom:9px;
+}
+
+.exam-box li{
+  color:rgba(255,255,255,.78);
 }
 
 /* QUIZ */
 
-.question{
+.quiz-question{
   font-size:17px;
-  line-height:1.5;
-  margin-bottom:14px;
+  line-height:1.45;
+  margin-bottom:15px;
 }
 
-.option{
-  display:block;
+.quiz-option{
   width:100%;
-  border:1px solid var(--border);
-  background:transparent;
-  color:var(--text);
   text-align:left;
-  padding:13px;
-  border-radius:13px;
+  border:1px solid var(--border);
+  background:#fafafd;
+  padding:14px;
+  border-radius:14px;
   margin-top:9px;
-  font-size:12px;
 }
 
-.option:hover{
-  background:var(--soft);
+.quiz-option:hover{
   border-color:var(--primary);
+  background:var(--soft);
 }
 
 .quiz-result{
   text-align:center;
-  padding:25px 0;
+  padding:25px 5px;
 }
 
 .score{
-  font-size:45px;
-  color:var(--primary);
+  font-size:42px;
   font-weight:900;
-}
-
-/* PROGRESS */
-
-.progress-wrap{
-  margin-top:14px;
-}
-
-.progress-line{
-  height:7px;
-  background:#e8e8ef;
-  border-radius:20px;
-  overflow:hidden;
-}
-
-.progress-line div{
-  width:25%;
-  height:100%;
-  background:var(--primary);
-  border-radius:20px;
-  transition:.4s;
-}
-
-.progress-label{
-  display:flex;
-  justify-content:space-between;
-  margin-bottom:6px;
-  color:var(--muted);
-  font-size:10px;
-}
-
-/* BOTTOM NAV */
-
-.bottom{
-  position:fixed;
-  left:50%;
-  bottom:12px;
-  transform:translateX(-50%);
-  width:min(94%,520px);
-  background:rgba(255,255,255,.95);
-  backdrop-filter:blur(20px);
-  border:1px solid rgba(255,255,255,.7);
-  box-shadow:0 15px 45px rgba(0,0,0,.15);
-  border-radius:22px;
-  padding:8px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  z-index:50;
-}
-
-.nav{
-  border:0;
-  background:transparent;
-  color:#858b9a;
-  border-radius:15px;
-  padding:8px;
-  font-size:10px;
-}
-
-.nav i{
-  display:block;
-  font-style:normal;
-  font-size:20px;
-  margin-bottom:3px;
-}
-
-.nav.active{
-  background:var(--soft);
   color:var(--primary);
+}
+
+/* PROFILE */
+
+.profile{text-align:center}
+
+.profile-avatar{
+  width:80px;height:80px;
+  margin:5px auto 13px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:25px;
+  background:linear-gradient(135deg,#6d4aff,#a78bfa);
+  font-size:38px;
+}
+
+.profile h2{font-size:21px}
+
+.profile p{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px;
+}
+
+.profile-row{
+  display:flex;
+  justify-content:space-around;
+  margin-top:20px;
+}
+
+.profile-stat strong{
+  display:block;
+  font-size:19px;
+}
+
+.profile-stat span{
+  font-size:10px;
+  color:var(--muted);
 }
 
 /* TOAST */
@@ -711,13 +1029,13 @@ button{
 .toast{
   position:fixed;
   left:50%;
-  bottom:92px;
-  transform:translate(-50%,20px);
-  background:#181b24;
+  bottom:90px;
+  transform:translateX(-50%) translateY(20px);
+  background:#171b25;
   color:#fff;
   padding:12px 17px;
   border-radius:13px;
-  font-size:11px;
+  font-size:12px;
   opacity:0;
   pointer-events:none;
   transition:.3s;
@@ -727,39 +1045,49 @@ button{
 
 .toast.show{
   opacity:1;
-  transform:translate(-50%,0);
+  transform:translateX(-50%) translateY(0);
 }
 
-/* DARK */
+/* DARK MODE */
 
 body.dark{
-  --bg:#0c0f16;
+  --bg:#0d1017;
   --card:#171b24;
-  --text:#f5f6fa;
+  --text:#f5f7fb;
   --muted:#9da5b5;
-  --border:#292e39;
-  --soft:#27213f;
-  --shadow:0 14px 40px rgba(0,0,0,.3);
+  --border:#292e3b;
+  --soft:#25203d;
+  --shadow:0 12px 35px rgba(0,0,0,.28);
 }
 
-body.dark .search{
+body.dark .search-box,
+body.dark .bottom-nav{
   background:rgba(23,27,36,.95);
 }
 
-body.dark .search input{
-  color:#fff;
+body.dark .search-box input{color:#fff}
+
+body.dark .quiz-option,
+body.dark .point{
+  background:#1b202b;
 }
 
 body.dark .close{
-  background:#292e39;
+  background:#282d39;
   color:#fff;
 }
 
-body.dark .important{
-  background:#292718;
-  color:#ddd09a;
-  border-color:#59512b;
+body.dark .notes{
+  background:#272518;
+  border-color:#625c38;
 }
+
+body.dark .notes p,
+body.dark .notes li{
+  color:#d4d0b8;
+}
+
+/* RESPONSIVE */
 
 @media(min-width:700px){
 
@@ -768,35 +1096,46 @@ body.dark .important{
     padding-right:30px;
   }
 
-  .container{
-    padding:0 30px;
+  .container{padding:0 30px}
+
+  .course-grid{
+    grid-template-columns:repeat(4,1fr);
   }
 
-  .topic-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
+  .modal{align-items:center}
 
-  .modal{
-    align-items:center;
-  }
-
-  .modal-box{
-    border-radius:27px;
-  }
+  .modal-box{border-radius:28px}
 }
 
-@media(max-width:430px){
+@media(max-width:420px){
 
-  .topic-grid{
+  .hero{margin-top:38px}
+
+  .hero h1{font-size:29px}
+
+  .welcome{padding:16px}
+
+  .teacher-avatar{
+    width:58px;height:58px;
+    font-size:28px;
+  }
+
+  .course-cover{height:95px}
+
+  .course-body{padding:13px}
+
+  .course-body h3{font-size:14px}
+
+  .feature-grid{
     grid-template-columns:1fr;
   }
 
-  .hero h1{
-    font-size:34px;
+  .chapter-topic-grid{
+    grid-template-columns:1fr;
   }
 
-  .info-card h2{
-    font-size:18px;
+  .compare-table{
+    font-size:9px;
   }
 }
 </style>
@@ -804,33 +1143,27 @@ body.dark .important{
 
 <body>
 
-<!-- HEADER -->
-
 <header class="header">
 
   <div class="topbar">
 
     <div class="brand">
-
-      <div class="logo">🎓</div>
+      <div class="brand-logo">🎓</div>
 
       <div>
-        <h2>Om Prakash</h2>
-        <small>PREMIUM TEACHING</small>
+        <div class="brand-text">Om Prakash</div>
+        <span class="brand-sub">PREMIUM LEARNING</span>
       </div>
-
     </div>
 
-    <div class="actions">
+    <div class="top-actions">
 
-      <button
-        class="icon-btn"
-        onclick="showToast('🔔 Chapter saved for revision')">
+      <button class="circle-btn"
+        onclick="showToast('🔔 No new notifications')">
         🔔
       </button>
 
-      <button
-        class="icon-btn"
+      <button class="circle-btn"
         onclick="toggleDark()">
         🌙
       </button>
@@ -839,22 +1172,20 @@ body.dark .important{
 
   </div>
 
-
   <div class="hero">
 
-    <div class="chapter-label">
-      CLASS 11 • GEOGRAPHY • CHAPTER 03
+    <div class="hero-small">
+      👋 Welcome back, Student
     </div>
 
     <h1>
-      Drainage<br>
-      <span>System of India</span>
+      Learn Smarter.<br>
+      <span>Grow Faster.</span>
     </h1>
 
     <p>
-      Concept-based premium notes covering drainage,
-      water divide, basin and the major drainage systems
-      of India.
+      Quality education, powerful practice and smart learning —
+      all in one place.
     </p>
 
   </div>
@@ -864,239 +1195,246 @@ body.dark .important{
 
 <main class="container">
 
-  <!-- SEARCH -->
+  <div class="search-box">
 
-  <div class="search">
-
-    <span>🔎</span>
+    <div class="search-icon">🔎</div>
 
     <input
-      id="search"
+      id="searchInput"
       type="text"
-      placeholder="Search topic, definition, concept..."
-      oninput="searchTopics()">
+      placeholder="Search courses, classes, notes..."
+      oninput="searchContent()">
+
+    <button
+      class="filter-btn"
+      onclick="showToast('🎯 Filters coming soon')">
+      Filter
+    </button>
 
   </div>
 
 
-  <!-- INTRO -->
+  <section class="welcome">
 
-  <section class="info-card">
+    <div class="welcome-text">
 
-    <div class="info-top">
+      <span class="tag">
+        ✨ PREMIUM EDUCATION
+      </span>
 
-      <div class="subject-icon">
-        🌊
-      </div>
+      <h2>
+        Welcome to Om Prakash Teaching
+      </h2>
 
-      <div>
-        <h2>
-          Chapter 03 — Drainage System
-        </h2>
-
-        <p>
-          India • Physical Geography
-        </p>
-      </div>
+      <p>
+        Build strong concepts, practice daily and
+        move closer to your goals.
+      </p>
 
     </div>
 
-    <div class="reference">
-
-      📚 <b>Reference framework:</b>
-      Concepts are organized using standard ideas
-      commonly discussed in physical and Indian geography
-      references including Thornbury, Savindra Singh,
-      Majid Husain and R.L. Singh. Wording here is original
-      and designed for student revision.
-
-    </div>
-
-    <div class="progress-wrap">
-
-      <div class="progress-label">
-        <span>Your Chapter Progress</span>
-        <span id="progressText">25%</span>
-      </div>
-
-      <div class="progress-line">
-        <div id="progressBar"></div>
-      </div>
-
-    </div>
+    <div class="teacher-avatar">👨‍🏫</div>
 
   </section>
 
-
-  <!-- STATS -->
-
-  <div class="stats">
-
-    <div class="stat">
-      <b>06</b>
-      <span>Main Topics</span>
-    </div>
-
-    <div class="stat">
-      <b>25+</b>
-      <span>Key Points</span>
-    </div>
-
-    <div class="stat">
-      <b>10</b>
-      <span>Quiz Questions</span>
-    </div>
-
-  </div>
-
-
-  <!-- TOPICS -->
 
   <section class="section">
 
     <div class="section-head">
-      <h2>Chapter Topics</h2>
-      <span>SELECT TOPIC →</span>
+      <h2>Your Learning</h2>
+      <p>Updated today</p>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <div class="stat-icon">📚</div>
+        <strong id="lessonStat">12</strong>
+        <span>Lessons</span>
+      </div>
+
+      <div class="stat">
+        <div class="stat-icon">🏆</div>
+        <strong id="testStat">8</strong>
+        <span>Tests</span>
+      </div>
+
+      <div class="stat">
+        <div class="stat-icon">⚡</div>
+        <strong id="progressStat">78%</strong>
+        <span>Progress</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="section">
+
+    <div class="section-head">
+
+      <h2>Popular Courses</h2>
+
+      <button
+        class="view-all"
+        onclick="showToast('📚 All courses selected')">
+        View All →
+      </button>
+
     </div>
 
 
-    <div class="topic-grid">
+    <div class="course-grid">
 
+      <article class="course searchable">
 
-      <article class="topic searchable">
+        <div class="course-cover cover-purple">
 
-        <div class="topic-number">
-          01
+          <div class="course-icon">🔬</div>
+
+          <span class="level">CLASS 11</span>
+
         </div>
 
-        <h3>
-          Drainage System
-        </h3>
+        <div class="course-body">
 
-        <p>
-          Drainage, drainage network and drainage patterns.
-        </p>
+          <h3>Science</h3>
 
-        <button
-          class="open-btn"
-          onclick="openTopic('drainage')">
-          Read Notes →
-        </button>
+          <p>
+            Physics, Chemistry & Biology concepts.
+          </p>
+
+          <div class="course-info">
+            <span>🎥 24 Lessons</span>
+            <span>78%</span>
+          </div>
+
+          <div class="course-progress">
+            <div style="width:78%"></div>
+          </div>
+
+          <button
+            class="course-btn"
+            onclick="openCourse('Science','🔬')">
+            Continue Learning →
+          </button>
+
+        </div>
 
       </article>
 
 
-      <article class="topic searchable">
+      <article class="course searchable">
 
-        <div class="topic-number">
-          02
+        <div class="course-cover cover-blue">
+
+          <div class="course-icon">📐</div>
+
+          <span class="level">CLASS 11</span>
+
         </div>
 
-        <h3>
-          Water Divide
-        </h3>
+        <div class="course-body">
 
-        <p>
-          Understand how a divide separates drainage basins.
-        </p>
+          <h3>Mathematics</h3>
 
-        <button
-          class="open-btn"
-          onclick="openTopic('divide')">
-          Read Notes →
-        </button>
+          <p>
+            Formulas, concepts and problem solving.
+          </p>
+
+          <div class="course-info">
+            <span>🎥 32 Lessons</span>
+            <span>52%</span>
+          </div>
+
+          <div class="course-progress">
+            <div style="width:52%"></div>
+          </div>
+
+          <button
+            class="course-btn"
+            onclick="openCourse('Mathematics','📐')">
+            Start Learning →
+          </button>
+
+        </div>
 
       </article>
 
 
-      <article class="topic searchable">
+      <article class="course searchable">
 
-        <div class="topic-number">
-          03
+        <div class="course-cover cover-green">
+
+          <div class="course-icon">📖</div>
+
+          <span class="level">CLASS 11</span>
+
         </div>
 
-        <h3>
-          Drainage Basin
-        </h3>
+        <div class="course-body">
 
-        <p>
-          Basin, catchment, tributaries and outlet.
-        </p>
+          <h3>English</h3>
 
-        <button
-          class="open-btn"
-          onclick="openTopic('basin')">
-          Read Notes →
-        </button>
+          <p>
+            Grammar, literature and communication.
+          </p>
+
+          <div class="course-info">
+            <span>🎥 18 Lessons</span>
+            <span>35%</span>
+          </div>
+
+          <div class="course-progress">
+            <div style="width:35%"></div>
+          </div>
+
+          <button
+            class="course-btn"
+            onclick="openCourse('English','📖')">
+            Start Learning →
+          </button>
+
+        </div>
 
       </article>
 
 
-      <article class="topic searchable">
+      <article class="course searchable">
 
-        <div class="topic-number">
-          04
+        <div class="course-cover cover-orange">
+
+          <div class="course-icon">🌍</div>
+
+          <span class="level">CLASS 11</span>
+
         </div>
 
-        <h3>
-          Northern Basin
-        </h3>
+        <div class="course-body">
 
-        <p>
-          Himalayan river system and major features.
-        </p>
+          <h3>Social Science</h3>
 
-        <button
-          class="open-btn"
-          onclick="openTopic('north')">
-          Read Notes →
-        </button>
+          <p>
+            History, Geography, Civics and Economics.
+          </p>
 
-      </article>
+          <div class="course-info">
+            <span>🎥 20 Lessons</span>
+            <span>64%</span>
+          </div>
 
+          <div class="course-progress">
+            <div style="width:64%"></div>
+          </div>
 
-      <article class="topic searchable">
+          <button
+            class="course-btn"
+            onclick="openCourse('Social Science','🌍')">
+            Continue Learning →
+          </button>
 
-        <div class="topic-number">
-          05
         </div>
-
-        <h3>
-          Southern Basin
-        </h3>
-
-        <p>
-          Peninsular drainage and major river systems.
-        </p>
-
-        <button
-          class="open-btn"
-          onclick="openTopic('south')">
-          Read Notes →
-        </button>
-
-      </article>
-
-
-      <article class="topic searchable">
-
-        <div class="topic-number">
-          06
-        </div>
-
-        <h3>
-          Exam Revision
-        </h3>
-
-        <p>
-          Important definitions, differences and questions.
-        </p>
-
-        <button
-          class="open-btn"
-          onclick="openTopic('exam')">
-          Revision →
-        </button>
 
       </article>
 
@@ -1105,33 +1443,116 @@ body.dark .important{
   </section>
 
 
-  <!-- QUICK CONCEPT -->
+  <section class="section">
+
+    <div class="section-head">
+      <h2>Everything You Need</h2>
+    </div>
+
+    <div class="feature-grid">
+
+      <div class="feature searchable">
+        <div class="feature-icon">🎥</div>
+        <h3>Video Classes</h3>
+        <p>
+          Learn through structured topic-wise lectures.
+        </p>
+      </div>
+
+      <div class="feature searchable">
+        <div class="feature-icon">📄</div>
+        <h3>Smart Notes</h3>
+        <p>
+          Important notes and revision material.
+        </p>
+      </div>
+
+      <div class="feature searchable">
+        <div class="feature-icon">🧠</div>
+        <h3>Practice Tests</h3>
+        <p>
+          Test your knowledge and improve your score.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
 
   <section class="section">
 
     <div class="section-head">
-      <h2>Quick Concept</h2>
+
+      <h2>Recent Classes</h2>
+
+      <button
+        class="view-all"
+        onclick="showToast('🎥 More classes coming soon')">
+        See All →
+      </button>
+
     </div>
 
-    <div class="note-preview">
 
-      <h3>
-        🌊 What is Drainage?
-      </h3>
+    <div class="lecture-list">
 
-      <p>
-        Drainage refers to the system through which
-        surface water flows through rivers, streams and
-        other channels and ultimately reaches a lake,
-        sea or another major water body.
-      </p>
+      <div class="lecture searchable">
 
-      <div class="key-box">
+        <div class="play">▶</div>
 
-        <b>Remember:</b><br>
+        <div>
+          <h3>Introduction to Physics</h3>
+          <p>Science • 24 min • Beginner</p>
+        </div>
 
-        River + Tributaries + Streams + Channels
-        together form a drainage network.
+        <button
+          onclick="openLesson(
+          'Introduction to Physics',
+          'Science',
+          'intro')">
+          Watch
+        </button>
+
+      </div>
+
+
+      <div class="lecture searchable">
+
+        <div class="play">▶</div>
+
+        <div>
+          <h3>Basic Chemistry Concepts</h3>
+          <p>Science • 31 min • Beginner</p>
+        </div>
+
+        <button
+          onclick="openLesson(
+          'Basic Chemistry Concepts',
+          'Science',
+          'chem')">
+          Watch
+        </button>
+
+      </div>
+
+
+      <div class="lecture searchable">
+
+        <div class="play">▶</div>
+
+        <div>
+          <h3>English Grammar Basics</h3>
+          <p>English • 22 min • Beginner</p>
+        </div>
+
+        <button
+          onclick="openLesson(
+          'English Grammar Basics',
+          'English',
+          'english')">
+          Watch
+        </button>
 
       </div>
 
@@ -1140,27 +1561,24 @@ body.dark .important{
   </section>
 
 
-  <!-- EXAM -->
-
   <section class="section">
 
-    <div class="exam">
+    <div class="announcement">
 
-      <small>
-        MP BOARD • EXAM FOCUS
-      </small>
+      <small>📢 IMPORTANT ANNOUNCEMENT</small>
 
       <h3>
-        Test Your Chapter Knowledge 🧠
+        New Classes Are Coming! 🚀
       </h3>
 
       <p>
-        Practice important concept-based questions
-        from Drainage System.
+        Stay connected for new lectures,
+        study material and practice tests.
       </p>
 
-      <button onclick="openQuiz()">
-        Start Quick Quiz →
+      <button
+        onclick="showToast('🔔 Notifications enabled')">
+        Turn On Notifications
       </button>
 
     </div>
@@ -1170,66 +1588,494 @@ body.dark .important{
 </main>
 
 
-<!-- BOTTOM NAV -->
-
-<nav class="bottom">
+<nav class="bottom-nav">
 
   <button
-    class="nav active"
-    onclick="goHome(this)">
-    <i>🏠</i>
+    class="nav-item active"
+    onclick="switchNav(this,'home')">
+    <span class="nav-icon">🏠</span>
     Home
   </button>
 
   <button
-    class="nav"
-    onclick="scrollTopics(this)">
-    <i>📚</i>
-    Topics
+    class="nav-item"
+    onclick="switchNav(this,'courses')">
+    <span class="nav-icon">📚</span>
+    Courses
   </button>
 
   <button
-    class="nav"
+    class="nav-item"
     onclick="openQuiz()">
-    <i>📝</i>
-    Quiz
+    <span class="nav-icon">📝</span>
+    Tests
   </button>
 
   <button
-    class="nav"
-    onclick="showToast('⭐ Chapter bookmarked')">
-    <i>⭐</i>
-    Save
+    class="nav-item"
+    onclick="openProfile()">
+    <span class="nav-icon">👤</span>
+    Profile
   </button>
 
 </nav>
 
 
-<!-- TOPIC MODAL -->
+<!-- COURSE MODAL -->
 
-<div
-  class="modal"
-  id="topicModal">
+<div class="modal" id="courseModal">
 
   <div class="modal-box">
 
-    <div class="modal-header">
+    <div class="modal-top">
 
-      <h2 id="modalTitle">
-        Chapter Notes
-      </h2>
+      <h2 id="courseModalTitle">Course</h2>
 
       <button
         class="close"
-        onclick="closeModal('topicModal')">
+        onclick="closeModal('courseModal')">
         ×
       </button>
 
     </div>
 
-    <div
-      class="note-content"
-      id="modalContent">
+
+    <div class="welcome">
+
+      <div class="welcome-text">
+
+        <span class="tag">COURSE</span>
+
+        <h2 id="courseName">Course</h2>
+
+        <p>
+          Complete lessons, revise notes
+          and test your knowledge.
+        </p>
+
+      </div>
+
+      <div
+        class="teacher-avatar"
+        id="courseEmoji">
+        📚
+      </div>
+
+    </div>
+
+
+    <div class="section">
+
+      <div class="section-head">
+        <h2>Course Content</h2>
+      </div>
+
+
+      <div class="lecture-list">
+
+        <div class="lecture">
+
+          <div class="play">01</div>
+
+          <div>
+            <h3>Introduction</h3>
+            <p>Start your course journey</p>
+          </div>
+
+          <button
+            onclick="openLesson(
+            'Introduction',
+            currentCourse,
+            'intro')">
+            Open
+          </button>
+
+        </div>
+
+
+        <div class="lecture">
+
+          <div class="play">02</div>
+
+          <div>
+            <h3>Main Concepts</h3>
+            <p>Learn the important concepts</p>
+          </div>
+
+          <button
+            onclick="openLesson(
+            'Main Concepts',
+            currentCourse,
+            'concepts')">
+            Open
+          </button>
+
+        </div>
+
+
+        <div class="lecture">
+
+          <div class="play">📄</div>
+
+          <div>
+            <h3>Study Notes</h3>
+            <p>Quick revision material</p>
+          </div>
+
+          <button
+            onclick="openNotes(currentCourse)">
+            Open
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- CHAPTER 03 MODAL -->
+
+<div class="modal" id="chapterModal">
+
+  <div class="modal-box">
+
+    <div class="modal-top">
+
+      <h2>🌍 Chapter 03</h2>
+
+      <button
+        class="close"
+        onclick="closeModal('chapterModal')">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="chapter-hero">
+
+      <div class="chapter-label">
+        CLASS 11 • GEOGRAPHY
+      </div>
+
+      <h2>Drainage System</h2>
+
+      <p>
+        A premium chapter module covering drainage,
+        water divides, drainage basins, major river systems,
+        lakes, economic importance and river pollution.
+      </p>
+
+    </div>
+
+
+    <div class="section-head">
+      <h2>Chapter Modules</h2>
+    </div>
+
+
+    <div class="chapter-topic-grid">
+
+      <div class="topic-card">
+        <div class="topic-number">01</div>
+        <h3>Introduction</h3>
+        <p>Understand drainage and drainage patterns.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('intro')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">02</div>
+        <h3>Water Divide</h3>
+        <p>Learn how a divide separates drainage systems.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('divide')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">03</div>
+        <h3>Drainage Basin</h3>
+        <p>Understand basin, tributaries and watershed.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('basin')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">04</div>
+        <h3>Northern River System</h3>
+        <p>Indus, Ganga and Brahmaputra systems.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('north')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">05</div>
+        <h3>Peninsular Drainage</h3>
+        <p>Major rivers of the Peninsular plateau.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('south')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">06</div>
+        <h3>Lakes</h3>
+        <p>Types, characteristics and importance of lakes.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('lakes')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">07</div>
+        <h3>River Economy</h3>
+        <p>How rivers support agriculture and society.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('economy')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">08</div>
+        <h3>River Pollution</h3>
+        <p>Causes, effects and prevention.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('pollution')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">09</div>
+        <h3>River Comparison</h3>
+        <p>East-flowing and west-flowing rivers.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('compare')">
+          Open →
+        </button>
+      </div>
+
+
+      <div class="topic-card">
+        <div class="topic-number">10</div>
+        <h3>Exam Revision</h3>
+        <p>Quick revision and important questions.</p>
+        <button class="topic-open"
+          onclick="showChapterSection('exam')">
+          Open →
+        </button>
+      </div>
+
+    </div>
+
+
+    <div id="chapterContent">
+
+      <div class="concept-section">
+
+        <h3>🌊 Introduction to Drainage</h3>
+
+        <p>
+          Drainage refers to the river system of an area.
+          It includes the main river, its tributaries and
+          the network through which surface water flows.
+        </p>
+
+        <div class="definition">
+          <b>Drainage System:</b>
+          The network of rivers and streams through which
+          water is collected and carried towards a larger
+          river, lake or sea.
+        </div>
+
+        <ul>
+          <li>Drainage develops according to relief, slope, rock structure and climate.</li>
+          <li>The pattern formed by streams and rivers is called a drainage pattern.</li>
+          <li>Common patterns include dendritic, trellis, rectangular and radial patterns.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="exam-box">
+
+      <h3>🎯 Chapter Focus</h3>
+
+      <ul>
+        <li>Learn definitions before memorising examples.</li>
+        <li>Understand the difference between basin and water divide.</li>
+        <li>Remember major Himalayan and Peninsular rivers.</li>
+        <li>Practise east-flowing and west-flowing river comparisons.</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- LESSON MODAL -->
+
+<div class="modal" id="lessonModal">
+
+  <div class="modal-box">
+
+    <div class="modal-top">
+
+      <h2 id="lessonModalTitle">Lesson</h2>
+
+      <button
+        class="close"
+        onclick="closeModal('lessonModal')">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="lesson-video">
+
+      <button
+        class="big-play"
+        onclick="playDemoVideo()">
+        ▶
+      </button>
+
+      <h3 id="videoTitle">
+        Lesson Video
+      </h3>
+
+      <p id="videoStatus">
+        Tap play to start the class
+      </p>
+
+    </div>
+
+
+    <div class="lesson-content">
+
+      <span class="tag">PREMIUM LESSON</span>
+
+      <h2 id="lessonTitle">
+        Introduction
+      </h2>
+
+      <p id="lessonDescription">
+        Welcome to this lesson.
+      </p>
+
+
+      <div class="lesson-points">
+
+        <div class="point">
+          💡 <b>Understand:</b>
+          Learn the basic idea clearly.
+        </div>
+
+        <div class="point">
+          📝 <b>Revise:</b>
+          Review important points after class.
+        </div>
+
+        <div class="point">
+          🎯 <b>Practice:</b>
+          Apply what you learned.
+        </div>
+
+      </div>
+
+
+      <button
+        class="complete-btn"
+        id="completeLessonBtn"
+        onclick="completeLesson()">
+        ✅ Mark Lesson as Complete
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- NOTES MODAL -->
+
+<div class="modal" id="notesModal">
+
+  <div class="modal-box">
+
+    <div class="modal-top">
+
+      <h2>📄 Study Notes</h2>
+
+      <button
+        class="close"
+        onclick="closeModal('notesModal')">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="notes">
+
+      <span class="tag">
+        <span id="notesCourse">COURSE</span>
+      </span>
+
+      <h3>
+        📚 Quick Revision Notes
+      </h3>
+
+      <p id="notesText">
+        These notes are designed for quick revision.
+        Read the concepts carefully and practise
+        important questions after studying.
+      </p>
+
+      <ul>
+
+        <li>Understand the concept before memorising it.</li>
+        <li>Revise important definitions regularly.</li>
+        <li>Practise textbook-style questions.</li>
+        <li>Use short revision sessions before exams.</li>
+
+      </ul>
+
+      <button
+        class="download-note"
+        onclick="downloadNotes()">
+        ⬇️ Save Notes
+      </button>
+
     </div>
 
   </div>
@@ -1239,17 +2085,13 @@ body.dark .important{
 
 <!-- QUIZ MODAL -->
 
-<div
-  class="modal"
-  id="quizModal">
+<div class="modal" id="quizModal">
 
   <div class="modal-box">
 
-    <div class="modal-header">
+    <div class="modal-top">
 
-      <h2>
-        🧠 Chapter Quiz
-      </h2>
+      <h2>🧠 Quick Test</h2>
 
       <button
         class="close"
@@ -1259,31 +2101,38 @@ body.dark .important{
 
     </div>
 
+
     <div id="quizArea">
 
       <div
-        class="question"
-        id="question">
+        class="quiz-question"
+        id="quizQuestion">
+        Loading...
       </div>
 
-      <div id="options"></div>
+      <div id="quizOptions"></div>
 
     </div>
+
 
     <div
       class="quiz-result hidden"
       id="quizResult">
 
-      <div class="score" id="score">
-        0/10
+      <div>🎉</div>
+
+      <div
+        class="score"
+        id="scoreText">
+        0/5
       </div>
 
       <p>
-        Quiz completed! Keep revising the chapter.
+        Great effort! Keep learning.
       </p>
 
       <button
-        class="open-btn"
+        class="course-btn"
         onclick="restartQuiz()">
         Try Again
       </button>
@@ -1295,572 +2144,126 @@ body.dark .important{
 </div>
 
 
-<!-- TOAST -->
+<!-- PROFILE MODAL -->
 
-<div
-  class="toast"
-  id="toast">
-  Done
+<div class="modal" id="profileModal">
+
+  <div class="modal-box">
+
+    <div class="modal-top">
+
+      <h2>My Profile</h2>
+
+      <button
+        class="close"
+        onclick="closeModal('profileModal')">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="profile">
+
+      <div class="profile-avatar">
+        👨‍🎓
+      </div>
+
+      <h2>Student</h2>
+
+      <p>
+        Welcome to Om Prakash Teaching
+      </p>
+
+
+      <div class="profile-row">
+
+        <div class="profile-stat">
+          <strong id="profileLessons">12</strong>
+          <span>Lessons</span>
+        </div>
+
+        <div class="profile-stat">
+          <strong id="profileTests">8</strong>
+          <span>Tests</span>
+        </div>
+
+        <div class="profile-stat">
+          <strong id="profileProgress">78%</strong>
+          <span>Progress</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="section">
+
+      <button
+        class="course-btn"
+        onclick="toggleDark()">
+        🌙 Toggle Dark Mode
+      </button>
+
+      <button
+        class="course-btn"
+        onclick="showToast('⚙️ Settings coming soon')">
+        ⚙️ Settings
+      </button>
+
+    </div>
+
+  </div>
+
 </div>
+
+
+<div class="toast" id="toast">Done</div>
 
 
 <script>
 
-/* =========================
-   TOPIC CONTENT
-========================= */
+/* GLOBAL */
 
-const topics = {
+let currentCourse="Science";
+let currentLesson="";
+let currentLessonType="";
 
-drainage:{
+let completedLessons=
+  Number(localStorage.getItem("om_completed")||0);
 
-title:"01 • Drainage System",
+let testsTaken=
+  Number(localStorage.getItem("om_tests")||8);
 
-content:`
 
-<span class="badge">CORE CONCEPT</span>
+/* DARK MODE */
 
-<h2>Drainage System</h2>
-
-<p>
-Drainage system means the network of rivers,
-streams and tributaries through which water flows
-from higher areas towards a lower outlet.
-</p>
-
-<div class="definition">
-<b>Simple Definition:</b><br>
-किसी क्षेत्र में नदियों, सहायक नदियों और धाराओं
-द्वारा जल के बहने की पूरी व्यवस्था को Drainage
-System कहा जाता है।
-</div>
-
-<h3>🌊 Important Terms</h3>
-
-<ul>
-<li><b>River:</b> A natural flowing body of water.</li>
-<li><b>Tributary:</b> A smaller river or stream that joins a larger river.</li>
-<li><b>Distributary:</b> A channel that branches away from a main river, commonly in deltaic areas.</li>
-<li><b>Drainage Network:</b> The interconnected arrangement of rivers and streams.</li>
-</ul>
-
-<h3>🏞️ Drainage Patterns</h3>
-
-<p>
-The arrangement of streams over a landscape is called
-a drainage pattern. It is influenced by relief, rock
-structure, geological conditions and slope.
-</p>
-
-<ul>
-<li><b>Dendritic:</b> Branches resemble a tree.</li>
-<li><b>Trellis:</b> Main streams are roughly parallel with short tributaries joining them.</li>
-<li><b>Rectangular:</b> Streams show strong right-angle turns, often related to joints or faults.</li>
-<li><b>Radial:</b> Streams flow outward from a central elevated area.</li>
-<li><b>Centripetal:</b> Streams flow towards a central depression or basin.</li>
-</ul>
-
-<div class="important">
-🎯 <b>Exam Point:</b>
-Drainage pattern is controlled by the nature of
-relief, slope and geological structure of an area.
-</div>
-
-`
-
-},
-
-
-divide:{
-
-title:"02 • Water Divide",
-
-content:`
-
-<span class="badge">IMPORTANT DEFINITION</span>
-
-<h2>Water Divide</h2>
-
-<p>
-A water divide is a higher land surface that separates
-the areas drained by two different river systems.
-</p>
-
-<div class="definition">
-<b>आसान भाषा में:</b><br>
-ऊँची भूमि या ridge जो दो अलग-अलग नदी बेसिनों
-के जल को अलग करती है, उसे Water Divide कहते हैं।
-</div>
-
-<h3>⛰️ How Does It Work?</h3>
-
-<ul>
-<li>Rainfall falling on one side flows into one basin.</li>
-<li>Water falling on the other side flows into another basin.</li>
-<li>The elevated boundary between them is the divide.</li>
-</ul>
-
-<h3>📌 Key Characteristics</h3>
-
-<ul>
-<li>Generally associated with higher land.</li>
-<li>Separates neighbouring drainage basins.</li>
-<li>Can be formed by mountains, ridges or elevated terrain.</li>
-<li>Important in understanding river drainage boundaries.</li>
-</ul>
-
-<h3>🔑 Example</h3>
-
-<p>
-The Himalayan and Peninsular highlands contain major
-relief features that influence the direction and
-separation of drainage systems.
-</p>
-
-<div class="important">
-🎯 <b>Remember:</b>
-Water Divide = Boundary between drainage basins.
-</div>
-
-`
-
-},
-
-
-basin:{
-
-title:"03 • Drainage Basin",
-
-content:`
-
-<span class="badge">CORE CONCEPT</span>
-
-<h2>Drainage Basin</h2>
-
-<p>
-A drainage basin is the area of land drained by a river
-and its tributaries.
-</p>
-
-<div class="definition">
-<b>हिंदी में:</b><br>
-किसी नदी तथा उसकी सहायक नदियों द्वारा जल निकासी
-किया जाने वाला पूरा क्षेत्र Drainage Basin कहलाता है।
-</div>
-
-<h3>🏞️ Main Components</h3>
-
-<ul>
-<li><b>Source:</b> The place where the river begins.</li>
-<li><b>Main River:</b> The principal river channel.</li>
-<li><b>Tributaries:</b> Smaller streams joining the main river.</li>
-<li><b>Watershed/Divide:</b> Boundary separating adjacent basins.</li>
-<li><b>Outlet:</b> Point where the drainage system leaves the basin.</li>
-</ul>
-
-<h3>💧 Factors Affecting Drainage</h3>
-
-<ul>
-<li>Relief and slope</li>
-<li>Rock structure</li>
-<li>Geological history</li>
-<li>Climate and rainfall</li>
-<li>Soil and vegetation</li>
-</ul>
-
-<h3>Drainage Basin vs Water Divide</h3>
-
-<table class="compare">
-
-<tr>
-<th>Drainage Basin</th>
-<th>Water Divide</th>
-</tr>
-
-<tr>
-<td>Area drained by a river system.</td>
-<td>Elevated boundary separating two basins.</td>
-</tr>
-
-<tr>
-<td>It is an area.</td>
-<td>It is a boundary or highland.</td>
-</tr>
-
-</table>
-
-<div class="important">
-🎯 <b>One-line answer:</b>
-A river basin is the area drained by a river and its
-tributaries.
-</div>
-
-`
-
-},
-
-
-north:{
-
-title:"04 • Northern Basin of India",
-
-content:`
-
-<span class="badge">INDIAN GEOGRAPHY</span>
-
-<h2>Northern Drainage System</h2>
-
-<p>
-The northern part of India is dominated by the Himalayan
-and associated river systems. These rivers have large
-catchment areas and are strongly influenced by the
-Himalayan relief.
-</p>
-
-<h3>🌊 Major River Systems</h3>
-
-<ul>
-<li><b>Indus System</b></li>
-<li><b>Ganga System</b></li>
-<li><b>Brahmaputra System</b></li>
-</ul>
-
-<h3>🏔️ General Features</h3>
-
-<ul>
-<li>Many rivers have their sources in or around the Himalayas.</li>
-<li>They receive water from rainfall and, in many areas, snow and glacier melt.</li>
-<li>Several have extensive tributary networks.</li>
-<li>They form broad alluvial plains in their lower courses.</li>
-<li>Flooding and channel shifting can occur in parts of the plains.</li>
-</ul>
-
-<h3>🌐 Indus System</h3>
-
-<p>
-The Indus drainage system includes the Indus and its
-important tributaries. Major tributaries associated
-with the Indian part of the system include Jhelum,
-Chenab, Ravi, Beas and Sutlej.
-</p>
-
-<h3>🌾 Ganga System</h3>
-
-<p>
-The Ganga system is one of the most extensive drainage
-systems of the northern plains. Important tributaries
-include Yamuna, Ghaghara, Gandak and Kosi, among others.
-</p>
-
-<h3>🌧️ Brahmaputra System</h3>
-
-<p>
-The Brahmaputra is a major river of the eastern Himalayan
-and Assam region. Its course and valley are strongly
-influenced by mountain relief and high rainfall.
-</p>
-
-<div class="important">
-🎯 <b>Exam Focus:</b>
-For long-answer questions, remember:
-Indus + Ganga + Brahmaputra = three major northern
-drainage systems.
-</div>
-
-`
-
-},
-
-
-south:{
-
-title:"05 • Southern / Peninsular Basin",
-
-content:`
-
-<span class="badge">PENINSULAR INDIA</span>
-
-<h2>Southern Drainage System</h2>
-
-<p>
-The Peninsular drainage system is associated mainly with
-the old and relatively stable Peninsular landmass.
-Its rivers are strongly influenced by plateau relief,
-slope and geological structure.
-</p>
-
-<h3>🌊 Major East-Flowing Rivers</h3>
-
-<ul>
-<li>Godavari</li>
-<li>Krishna</li>
-<li>Kaveri</li>
-<li>Mahanadi</li>
-<li>Other coastal and plateau rivers</li>
-</ul>
-
-<h3>🌅 Major West-Flowing Rivers</h3>
-
-<ul>
-<li>Narmada</li>
-<li>Tapti (Tapi)</li>
-<li>Several shorter west-flowing coastal rivers</li>
-</ul>
-
-<h3>📌 General Characteristics</h3>
-
-<ul>
-<li>Many rivers have relatively fixed courses compared with young Himalayan systems.</li>
-<li>Most Peninsular rivers are mainly rain-fed and show seasonal variation in discharge.</li>
-<li>The plateau slope strongly influences river direction.</li>
-<li>East-flowing rivers generally have longer courses and may form deltas near their mouths.</li>
-<li>Some west-flowing rivers occupy rift-related valleys.</li>
-</ul>
-
-<h3>🔄 Northern vs Peninsular Drainage</h3>
-
-<table class="compare">
-
-<tr>
-<th>Northern System</th>
-<th>Peninsular System</th>
-</tr>
-
-<tr>
-<td>Strongly associated with Himalayas.</td>
-<td>Associated with Peninsular plateau.</td>
-</tr>
-
-<tr>
-<td>Many rivers are perennial.</td>
-<td>Many rivers show seasonal discharge.</td>
-</tr>
-
-<tr>
-<td>Large alluvial plains.</td>
-<td>Plateau and hard-rock terrain common.</td>
-</tr>
-
-<tr>
-<td>Large tributary networks.</td>
-<td>Generally more structurally controlled courses.</td>
-</tr>
-
-</table>
-
-<div class="important">
-🎯 <b>Memory Trick:</b><br>
-East: Godavari • Krishna • Kaveri • Mahanadi<br>
-West: Narmada • Tapti
-</div>
-
-`
-
-},
-
-
-exam:{
-
-title:"06 • Exam Revision",
-
-content:`
-
-<span class="badge">MP BOARD REVISION</span>
-
-<h2>Important Exam Points</h2>
-
-<h3>📌 Definitions</h3>
-
-<ul>
-
-<li>
-<b>Drainage:</b>
-Natural system of water flow through rivers and streams.
-</li>
-
-<li>
-<b>Drainage Basin:</b>
-Area drained by a river and its tributaries.
-</li>
-
-<li>
-<b>Water Divide:</b>
-Higher land separating two drainage basins.
-</li>
-
-<li>
-<b>Tributary:</b>
-A smaller stream or river joining a larger river.
-</li>
-
-<li>
-<b>Drainage Pattern:</b>
-Spatial arrangement of streams and rivers in an area.
-</li>
-
-</ul>
-
-<h3>📝 Important Questions</h3>
-
-<ul>
-
-<li>What is a drainage system?</li>
-
-<li>Define drainage basin.</li>
-
-<li>What is a water divide?</li>
-
-<li>What is a tributary?</li>
-
-<li>Explain major drainage patterns.</li>
-
-<li>Describe the main northern drainage systems of India.</li>
-
-<li>Write the main characteristics of Peninsular drainage.</li>
-
-<li>Differentiate between Himalayan and Peninsular rivers.</li>
-
-</ul>
-
-<h3>⭐ Five Things to Remember</h3>
-
-<ul>
-
-<li>Drainage = network of flowing water.</li>
-
-<li>Basin = area drained by a river system.</li>
-
-<li>Divide = boundary between basins.</li>
-
-<li>Northern system = Indus, Ganga, Brahmaputra.</li>
-
-<li>Peninsular system = major east- and west-flowing rivers.</li>
-
-</ul>
-
-<div class="important">
-🔥 <b>Board Strategy:</b>
-Definitions + differences + major rivers + drainage
-patterns ko specially revise karo. Long answers mein
-heading aur points ka use karo.
-</div>
-
-`
-
+if(localStorage.getItem("om_dark")==="1"){
+  document.body.classList.add("dark");
 }
 
-};
+function toggleDark(){
 
+  document.body.classList.toggle("dark");
 
-/* =========================
-   OPEN TOPIC
-========================= */
+  const enabled=
+    document.body.classList.contains("dark");
 
-function openTopic(id){
+  localStorage.setItem(
+    "om_dark",
+    enabled?"1":"0"
+  );
 
-  const topic=topics[id];
-
-  if(!topic) return;
-
-  document.getElementById("modalTitle")
-    .innerText=topic.title;
-
-  document.getElementById("modalContent")
-    .innerHTML=topic.content;
-
-  document.getElementById("topicModal")
-    .classList.add("show");
-
-  updateProgress();
-
+  showToast(
+    enabled
+      ?"🌙 Dark mode enabled"
+      :"☀️ Light mode enabled"
+  );
 }
 
 
-/* =========================
-   MODALS
-========================= */
-
-function closeModal(id){
-
-  document.getElementById(id)
-    .classList.remove("show");
-
-}
-
-document.querySelectorAll(".modal")
-.forEach(modal=>{
-
-  modal.addEventListener("click",e=>{
-
-    if(e.target===modal){
-      modal.classList.remove("show");
-    }
-
-  });
-
-});
-
-
-document.addEventListener("keydown",e=>{
-
-  if(e.key==="Escape"){
-
-    document.querySelectorAll(".modal")
-    .forEach(m=>m.classList.remove("show"));
-
-  }
-
-});
-
-
-/* =========================
-   PROGRESS
-========================= */
-
-function updateProgress(){
-
-  let progress=
-    Number(localStorage.getItem("chapter03_progress")||25);
-
-  document.getElementById("progressBar")
-    .style.width=progress+"%";
-
-  document.getElementById("progressText")
-    .innerText=progress+"%";
-
-}
-
-
-/* =========================
-   SEARCH
-========================= */
-
-function searchTopics(){
-
-  const query=
-    document.getElementById("search")
-    .value
-    .toLowerCase()
-    .trim();
-
-  document.querySelectorAll(".searchable")
-  .forEach(item=>{
-
-    item.style.display=
-      item.innerText
-      .toLowerCase()
-      .includes(query)
-      ? ""
-      : "none";
-
-  });
-
-}
-
-
-/* =========================
-   TOAST
-========================= */
+/* TOAST */
 
 let toastTimer;
 
@@ -1876,326 +2279,1103 @@ function showToast(message){
   clearTimeout(toastTimer);
 
   toastTimer=setTimeout(()=>{
-
     toast.classList.remove("show");
-
   },2200);
-
 }
 
 
-/* =========================
-   DARK MODE
-========================= */
+/* MODAL */
 
-if(localStorage.getItem("chapter03_dark")==="1"){
-  document.body.classList.add("dark");
+function openModal(id){
+  document.getElementById(id).classList.add("show");
 }
 
-function toggleDark(){
-
-  document.body.classList.toggle("dark");
-
-  const dark=
-    document.body.classList.contains("dark");
-
-  localStorage.setItem(
-    "chapter03_dark",
-    dark ? "1":"0"
-  );
-
-  showToast(
-    dark
-    ? "🌙 Dark mode enabled"
-    : "☀️ Light mode enabled"
-  );
-
+function closeModal(id){
+  document.getElementById(id).classList.remove("show");
 }
 
 
-/* =========================
-   NAV
-========================= */
+/* COURSE */
 
-function goHome(btn){
+function openCourse(name,emoji){
 
-  setActive(btn);
+  currentCourse=name;
 
-  window.scrollTo({
-    top:0,
-    behavior:"smooth"
+  document.getElementById(
+    "courseModalTitle"
+  ).innerText=emoji+" "+name;
+
+  document.getElementById(
+    "courseName"
+  ).innerText=name;
+
+  document.getElementById(
+    "courseEmoji"
+  ).innerText=emoji;
+
+  openModal("courseModal");
+}
+
+
+/* SOCIAL SCIENCE CHAPTER */
+
+function openDrainageChapter(){
+
+  closeModal("courseModal");
+
+  openModal("chapterModal");
+
+  document.getElementById("chapterContent").innerHTML=`
+
+    <div class="concept-section">
+
+      <h3>🌊 Introduction to Drainage</h3>
+
+      <p>
+        Drainage refers to the river system of a particular
+        area. It includes the main river, its tributaries,
+        streams and the land drained by them.
+      </p>
+
+      <div class="definition">
+        <b>Drainage:</b>
+        The network of rivers and streams through which
+        surface water flows towards a common outlet.
+      </div>
+
+      <ul>
+        <li>Drainage is strongly influenced by relief and slope.</li>
+        <li>Rock structure also affects the direction of rivers.</li>
+        <li>Climate controls the amount and seasonality of river water.</li>
+        <li>The arrangement of streams is called a drainage pattern.</li>
+      </ul>
+
+    </div>
+
+  `;
+}
+
+
+/* CHAPTER SECTIONS */
+
+function showChapterSection(type){
+
+  const box=
+    document.getElementById("chapterContent");
+
+  const content={
+
+    intro:`
+
+      <div class="concept-section">
+
+        <h3>🌊 Introduction to Drainage</h3>
+
+        <p>
+          Drainage describes the river network of an area.
+          A river system consists of a main river together
+          with its tributaries and smaller streams.
+        </p>
+
+        <div class="definition">
+          <b>Drainage Pattern:</b>
+          The arrangement or geometric pattern formed by
+          rivers and streams over the land surface.
+        </div>
+
+        <ul>
+          <li>Dendritic pattern develops where the underlying rock has relatively uniform resistance.</li>
+          <li>Trellis pattern is commonly associated with alternating hard and soft rock structures.</li>
+          <li>Radial pattern develops when rivers flow outward from a central elevated area.</li>
+          <li>Drainage is shaped by relief, geology, climate and geological history.</li>
+        </ul>
+
+      </div>
+
+    `,
+
+    divide:`
+
+      <div class="concept-section">
+
+        <h3>⛰️ Water Divide</h3>
+
+        <p>
+          A water divide is an elevated area that separates
+          the drainage areas of two different river systems.
+        </p>
+
+        <div class="definition">
+          <b>Example:</b>
+          The Ambala region is often used as an example of
+          a water divide between the Indus and Ganga systems.
+        </div>
+
+        <ul>
+          <li>It acts as a boundary between two drainage basins.</li>
+          <li>Water falling on opposite sides can flow into different river systems.</li>
+          <li>Major mountain ranges can also function as drainage divides.</li>
+        </ul>
+
+      </div>
+
+    `,
+
+    basin:`
+
+      <div class="concept-section">
+
+        <h3>🏞️ Drainage Basin</h3>
+
+        <p>
+          A drainage basin is the area drained by a river
+          and its tributaries.
+        </p>
+
+        <div class="definition">
+          <b>Drainage Basin:</b>
+          The entire land area from which a river and its
+          tributaries collect surface water.
+        </div>
+
+        <ul>
+          <li>The main river forms the principal channel.</li>
+          <li>Tributaries join the main river and increase its discharge.</li>
+          <li>The boundary of a basin is generally formed by higher land called a water divide.</li>
+          <li>A large basin may contain many smaller sub-basins.</li>
+        </ul>
+
+      </div>
+
+    `,
+
+    north:`
+
+      <div class="concept-section">
+
+        <h3>🏔️ Northern Indian River System</h3>
+
+        <p>
+          The Northern Indian drainage system is dominated
+          by the Himalayan rivers. Many of these rivers are
+          perennial because they receive water from rainfall
+          as well as melting snow and glaciers.
+        </p>
+
+        <div class="river-card">
+          <h4>Indus River System</h4>
+          <p>
+            The Indus system includes important tributaries
+            such as Jhelum, Chenab, Ravi, Beas and Sutlej.
+          </p>
+        </div>
+
+        <div class="river-card">
+          <h4>Ganga River System</h4>
+          <p>
+            The Ganga system has a large network of tributaries.
+            Yamuna, Ghaghara, Gandak and Kosi are among its
+            important tributaries.
+          </p>
+        </div>
+
+        <div class="river-card">
+          <h4>Brahmaputra River System</h4>
+          <p>
+            The Brahmaputra flows through the eastern Himalayan
+            region and the Assam valley before continuing
+            towards the deltaic region.
+          </p>
+        </div>
+
+      </div>
+
+    `,
+
+    south:`
+
+      <div class="concept-section">
+
+        <h3>🌄 Peninsular Drainage</h3>
+
+        <p>
+          Peninsular rivers generally have more stable and
+          mature courses because they flow over an ancient
+          and relatively stable landmass.
+        </p>
+
+        <div class="river-card">
+          <h4>Godavari</h4>
+          <p>
+            The Godavari is the largest Peninsular river basin
+            and flows generally eastward into the Bay of Bengal.
+          </p>
+        </div>
+
+        <div class="river-card">
+          <h4>Mahanadi</h4>
+          <p>
+            The Mahanadi flows eastward and forms an important
+            river basin in central-eastern India.
+          </p>
+        </div>
+
+        <div class="river-card">
+          <h4>Krishna</h4>
+          <p>
+            The Krishna flows eastward and receives tributaries
+            such as Bhima and Tungabhadra.
+          </p>
+        </div>
+
+        <div class="river-card">
+          <h4>Kaveri</h4>
+          <p>
+            The Kaveri is an important Peninsular river supporting
+            agriculture in southern India.
+          </p>
+        </div>
+
+        <div class="river-card">
+          <h4>Narmada & Tapi</h4>
+          <p>
+            These are major west-flowing Peninsular rivers.
+            They flow through rift-related valleys and drain
+            towards the Arabian Sea.
+          </p>
+        </div>
+
+      </div>
+
+    `,
+
+    lakes:`
+
+      <div class="concept-section">
+
+        <h3>🏞️ Lakes</h3>
+
+        <p>
+          Lakes are inland water bodies surrounded by land.
+          They may be natural or artificial and can develop
+          through different geological and geomorphological
+          processes.
+        </p>
+
+        <ul>
+          <li>Glacial lakes develop in regions influenced by glaciers.</li>
+          <li>Ox-bow lakes can form from abandoned meanders.</li>
+          <li>Lagoons are shallow coastal water bodies separated from the sea by barriers.</li>
+          <li>Some lakes contain fresh water while others are saline.</li>
+        </ul>
+
+        <div class="definition">
+          <b>Importance:</b>
+          Lakes help regulate river flow, support ecosystems,
+          provide water resources and contribute to tourism
+          and local economic activities.
+        </div>
+
+      </div>
+
+    `,
+
+    economy:`
+
+      <div class="concept-section">
+
+        <h3>💧 Economic Importance of Rivers</h3>
+
+        <ul>
+          <li>Rivers provide water for agriculture and irrigation.</li>
+          <li>They supply water for domestic and industrial needs.</li>
+          <li>River valleys often support fertile agricultural regions.</li>
+          <li>Hydroelectric power can be generated from suitable river systems.</li>
+          <li>Rivers and lakes support fisheries and aquatic ecosystems.</li>
+          <li>Some river landscapes and lakes promote tourism.</li>
+        </ul>
+
+      </div>
+
+    `,
+
+    pollution:`
+
+      <div class="concept-section">
+
+        <h3>⚠️ River Pollution</h3>
+
+        <p>
+          River pollution occurs when harmful substances enter
+          river water and reduce its quality.
+        </p>
+
+        <ul>
+          <li>Untreated domestic sewage is a major source.</li>
+          <li>Industrial effluents may introduce harmful chemicals.</li>
+          <li>Agricultural runoff can carry fertilisers and pesticides.</li>
+          <li>Plastic and solid waste can damage aquatic ecosystems.</li>
+        </ul>
+
+        <div class="definition">
+          <b>Prevention:</b>
+          Proper sewage treatment, industrial waste management,
+          responsible agricultural practices and reduction of
+          solid waste can help protect river systems.
+        </div>
+
+      </div>
+
+    `,
+
+    compare:`
+
+      <div class="concept-section">
+
+        <h3>↔️ East-flowing vs West-flowing Rivers</h3>
+
+        <table class="compare-table">
+
+          <tr>
+            <th>Feature</th>
+            <th>East-flowing</th>
+            <th>West-flowing</th>
+          </tr>
+
+          <tr>
+            <td>General direction</td>
+            <td>Towards the Bay of Bengal</td>
+            <td>Towards the Arabian Sea</td>
+          </tr>
+
+          <tr>
+            <td>Examples</td>
+            <td>Godavari, Mahanadi, Krishna, Kaveri</td>
+            <td>Narmada, Tapi</td>
+          </tr>
+
+          <tr>
+            <td>Delta</td>
+            <td>Many major rivers form deltas</td>
+            <td>Many major rivers form estuaries</td>
+          </tr>
+
+          <tr>
+            <td>Major drainage region</td>
+            <td>Large parts of the eastern Peninsular region</td>
+            <td>Western Peninsular region</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    `,
+
+    exam:`
+
+      <div class="concept-section">
+
+        <h3>🎯 Exam Revision</h3>
+
+        <div class="definition">
+          <b>Must Remember:</b>
+          Water divide separates drainage basins, while a
+          drainage basin is the land area drained by a river
+          and its tributaries.
+        </div>
+
+        <ul>
+          <li>Define drainage system.</li>
+          <li>Explain water divide with an example.</li>
+          <li>Define drainage basin.</li>
+          <li>Differentiate Himalayan and Peninsular rivers.</li>
+          <li>Name important tributaries of the Indus and Ganga systems.</li>
+          <li>Write major east-flowing Peninsular rivers.</li>
+          <li>Write major west-flowing Peninsular rivers.</li>
+          <li>Explain the importance of lakes.</li>
+          <li>Discuss causes of river pollution.</li>
+        </ul>
+
+        <div class="exam-box">
+
+          <h3>⭐ Quick Recall</h3>
+
+          <ul>
+            <li>Water Divide → separates drainage basins</li>
+            <li>Drainage Basin → area drained by a river system</li>
+            <li>Indus → Jhelum, Chenab, Ravi, Beas, Sutlej</li>
+            <li>Ganga → major Himalayan river system</li>
+            <li>Godavari → largest Peninsular river basin</li>
+            <li>Narmada & Tapi → major west-flowing rivers</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    `
+
+  };
+
+  box.innerHTML=
+    content[type] || content.intro;
+
+  box.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
   });
 
 }
 
 
-function scrollTopics(btn){
+/* LESSON */
 
-  setActive(btn);
+function openLesson(title,course,type){
 
-  document.querySelector(".topic-grid")
-    .scrollIntoView({
-      behavior:"smooth",
-      block:"center"
+  currentCourse=course;
+  currentLesson=title;
+  currentLessonType=type;
+
+  closeModal("courseModal");
+
+  /*
+    Special handling for Social Science
+  */
+
+  if(course==="Social Science"){
+
+    closeModal("lessonModal");
+
+    openModal("chapterModal");
+
+    return;
+  }
+
+  document.getElementById(
+    "lessonModalTitle"
+  ).innerText="🎥 "+title;
+
+  document.getElementById(
+    "videoTitle"
+  ).innerText=title;
+
+  document.getElementById(
+    "lessonTitle"
+  ).innerText=title;
+
+  const description=
+    document.getElementById(
+      "lessonDescription"
+    );
+
+  if(type==="intro"){
+
+    description.innerText=
+      "This introduction lesson provides a clear overview of the subject and explains the major ideas that will be studied throughout the course.";
+
+  }
+
+  else if(type==="concepts"){
+
+    description.innerText=
+      "This lesson focuses on important concepts and explains them in a simple, structured way so that you can understand and revise them easily.";
+
+  }
+
+  else if(type==="chem"){
+
+    description.innerText=
+      "This class introduces important Chemistry fundamentals and helps you build a strong conceptual foundation.";
+
+  }
+
+  else if(type==="english"){
+
+    description.innerText=
+      "This class covers essential English grammar rules with simple explanations and examples.";
+
+  }
+
+  document.getElementById(
+    "videoStatus"
+  ).innerText=
+    "Tap play to start the demo class";
+
+  document.getElementById(
+    "completeLessonBtn"
+  ).innerText=
+    "✅ Mark Lesson as Complete";
+
+  openModal("lessonModal");
+}
+
+
+/* DEMO VIDEO */
+
+function playDemoVideo(){
+
+  document.getElementById(
+    "videoStatus"
+  ).innerText=
+    "▶ Demo class is playing...";
+
+  showToast(
+    "🎥 Demo video started"
+  );
+}
+
+
+/* COMPLETE */
+
+function completeLesson(){
+
+  completedLessons++;
+
+  localStorage.setItem(
+    "om_completed",
+    completedLessons
+  );
+
+  document.getElementById(
+    "lessonStat"
+  ).innerText=
+    12+completedLessons;
+
+  document.getElementById(
+    "profileLessons"
+  ).innerText=
+    12+completedLessons;
+
+  document.getElementById(
+    "completeLessonBtn"
+  ).innerText=
+    "✅ Lesson Completed";
+
+  showToast(
+    "🎉 Lesson completed successfully!"
+  );
+}
+
+
+/* NOTES */
+
+function openNotes(course){
+
+  currentCourse=course;
+
+  document.getElementById(
+    "notesCourse"
+  ).innerText=
+    course+" NOTES";
+
+  if(course==="Social Science"){
+
+    closeModal("courseModal");
+
+    openModal("chapterModal");
+
+    showChapterSection("exam");
+
+    return;
+  }
+
+  closeModal("courseModal");
+
+  openModal("notesModal");
+}
+
+
+function downloadNotes(){
+
+  let text="";
+
+  if(currentCourse==="Social Science"){
+
+    text=`
+OM PRAKASH TEACHING
+CLASS 11 GEOGRAPHY
+CHAPTER 03 — DRAINAGE SYSTEM
+
+INTRODUCTION
+Drainage refers to the river system of an area.
+
+WATER DIVIDE
+A water divide is an elevated area that separates two drainage basins.
+
+DRAINAGE BASIN
+A drainage basin is the area drained by a river and its tributaries.
+
+NORTHERN RIVER SYSTEM
+Indus, Ganga and Brahmaputra are major Himalayan river systems.
+
+PENINSULAR RIVERS
+Godavari, Mahanadi, Krishna, Kaveri, Narmada and Tapi are important rivers.
+
+EAST-FLOWING
+Godavari, Mahanadi, Krishna and Kaveri.
+
+WEST-FLOWING
+Narmada and Tapi.
+
+LAKES
+Lakes are inland water bodies and are important for water resources,
+ecosystems, tourism and flow regulation.
+
+RIVER POLLUTION
+Major causes include sewage, industrial waste, agricultural runoff
+and solid waste.
+
+EXAM FOCUS
+Water Divide
+Drainage Basin
+Northern Indian Rivers
+Peninsular Rivers
+East-flowing vs West-flowing rivers
+River Pollution
+`;
+
+  }else{
+
+    text=`
+OM PRAKASH TEACHING
+
+${currentCourse} — Study Notes
+
+Understand the concept clearly.
+Revise important definitions.
+Practise questions regularly.
+Keep learning!
+`;
+
+  }
+
+  const blob=
+    new Blob([text],{
+      type:"text/plain"
     });
 
+  const url=
+    URL.createObjectURL(blob);
+
+  const a=
+    document.createElement("a");
+
+  a.href=url;
+
+  a.download=
+    currentCourse
+      .replace(/\s+/g,"_")
+      +"_Notes.txt";
+
+  document.body.appendChild(a);
+
+  a.click();
+
+  a.remove();
+
+  URL.revokeObjectURL(url);
+
+  showToast("📄 Notes saved!");
 }
 
 
-function setActive(btn){
+/* QUIZ */
 
-  document.querySelectorAll(".nav")
-  .forEach(n=>n.classList.remove("active"));
+const quizQuestions=[
 
-  btn.classList.add("active");
+  {
+    q:"What is a water divide?",
+    options:[
+      "A river delta",
+      "An elevated area separating drainage basins",
+      "A type of lake",
+      "A tributary"
+    ],
+    answer:1
+  },
 
-}
+  {
+    q:"Which is a major west-flowing Peninsular river?",
+    options:[
+      "Godavari",
+      "Krishna",
+      "Narmada",
+      "Mahanadi"
+    ],
+    answer:2
+  },
 
+  {
+    q:"Which river system includes Jhelum and Sutlej?",
+    options:[
+      "Ganga",
+      "Indus",
+      "Brahmaputra",
+      "Kaveri"
+    ],
+    answer:1
+  },
 
-/* =========================
-   QUIZ
-========================= */
+  {
+    q:"Which is an east-flowing Peninsular river?",
+    options:[
+      "Tapi",
+      "Narmada",
+      "Godavari",
+      "None"
+    ],
+    answer:2
+  },
 
-const quiz=[
-
-{
-q:"Drainage basin किसे कहते हैं?",
-o:[
-"केवल नदी के स्रोत को",
-"नदी और उसकी सहायक नदियों द्वारा drained क्षेत्र को",
-"केवल पर्वत को",
-"समुद्र के किनारे को"
-],
-a:1
-},
-
-{
-q:"Water divide का मुख्य कार्य क्या है?",
-o:[
-"दो drainage basins को अलग करना",
-"नदी की गति बढ़ाना",
-"बारिश रोकना",
-"समुद्र बनाना"
-],
-a:0
-},
-
-{
-q:"इनमें से कौन northern drainage system का प्रमुख river system है?",
-o:[
-"Indus",
-"Godavari",
-"Krishna",
-"Kaveri"
-],
-a:0
-},
-
-{
-q:"इनमें से कौन Peninsular India की प्रमुख नदी है?",
-o:[
-"Godavari",
-"Yamuna",
-"Ganga",
-"Brahmaputra"
-],
-a:0
-},
-
-{
-q:"Narmada सामान्यतः किस दिशा में बहती है?",
-o:[
-"East",
-"West",
-"North",
-"South"
-],
-a:1
-},
-
-{
-q:"पेड़ की शाखाओं जैसी drainage pattern को क्या कहते हैं?",
-o:[
-"Radial",
-"Dendritic",
-"Rectangular",
-"Centripetal"
-],
-a:1
-},
-
-{
-q:"छोटी नदी जो बड़ी नदी में मिलती है उसे क्या कहते हैं?",
-o:[
-"Distributary",
-"Tributary",
-"Divide",
-"Basin"
-],
-a:1
-},
-
-{
-q:"Radial drainage में streams सामान्यतः कहाँ से बाहर की ओर बहती हैं?",
-o:[
-"Central elevated area",
-"Sea",
-"Depression",
-"Flat plain"
-],
-a:0
-},
-
-{
-q:"Ganga system की प्रमुख tributary कौन-सी है?",
-o:[
-"Yamuna",
-"Narmada",
-"Tapti",
-"Godavari"
-],
-a:0
-},
-
-{
-q:"Peninsular drainage को सबसे अधिक कौन प्रभावित करता है?",
-o:[
-"Plateau relief और geological structure",
-"केवल समुद्र",
-"केवल हिमपात",
-"केवल रेगिस्तान"
-],
-a:0
-}
+  {
+    q:"What does a drainage basin represent?",
+    options:[
+      "Only a river's source",
+      "Area drained by a river and its tributaries",
+      "Only a lake",
+      "Only a mountain"
+    ],
+    answer:1
+  }
 
 ];
 
-let qIndex=0;
-let score=0;
+let quizIndex=0;
+let quizScore=0;
+
 
 function openQuiz(){
 
-  qIndex=0;
-  score=0;
+  quizIndex=0;
+  quizScore=0;
 
-  document.getElementById("quizArea")
-    .classList.remove("hidden");
+  document.getElementById(
+    "quizArea"
+  ).classList.remove("hidden");
 
-  document.getElementById("quizResult")
-    .classList.add("hidden");
+  document.getElementById(
+    "quizResult"
+  ).classList.add("hidden");
 
-  document.getElementById("quizModal")
-    .classList.add("show");
+  openModal("quizModal");
 
   loadQuestion();
-
 }
 
 
 function loadQuestion(){
 
-  const q=quiz[qIndex];
+  const q=
+    quizQuestions[quizIndex];
 
-  document.getElementById("question")
-    .innerText=
-    (qIndex+1)+". "+q.q;
+  document.getElementById(
+    "quizQuestion"
+  ).innerText=
+    (quizIndex+1)+". "+q.q;
 
-  const box=
-    document.getElementById("options");
+  const options=
+    document.getElementById(
+      "quizOptions"
+    );
 
-  box.innerHTML="";
+  options.innerHTML="";
 
-  q.o.forEach((option,index)=>{
+  q.options.forEach(
+    (option,index)=>{
 
-    const btn=
-      document.createElement("button");
+      const btn=
+        document.createElement("button");
 
-    btn.className="option";
+      btn.className="quiz-option";
 
-    btn.innerText=
-      String.fromCharCode(65+index)
-      +". "+option;
+      btn.innerText=
+        String.fromCharCode(65+index)
+        +". "+option;
 
-    btn.onclick=()=>answer(index);
+      btn.onclick=()=>{
+        checkAnswer(index);
+      };
 
-    box.appendChild(btn);
+      options.appendChild(btn);
+
+    }
+  );
+}
+
+
+function checkAnswer(selected){
+
+  const q=
+    quizQuestions[quizIndex];
+
+  if(selected===q.answer){
+
+    quizScore++;
+
+    showToast("✅ Correct answer!");
+
+  }else{
+
+    showToast("❌ Keep practicing!");
+
+  }
+
+  quizIndex++;
+
+  if(
+    quizIndex<
+    quizQuestions.length
+  ){
+
+    setTimeout(
+      loadQuestion,
+      450
+    );
+
+  }else{
+
+    setTimeout(
+      showQuizResult,
+      500
+    );
+
+  }
+}
+
+
+function showQuizResult(){
+
+  document.getElementById(
+    "quizArea"
+  ).classList.add("hidden");
+
+  document.getElementById(
+    "quizResult"
+  ).classList.remove("hidden");
+
+  document.getElementById(
+    "scoreText"
+  ).innerText=
+    quizScore+
+    "/"+
+    quizQuestions.length;
+
+  testsTaken++;
+
+  localStorage.setItem(
+    "om_tests",
+    testsTaken
+  );
+
+  document.getElementById(
+    "testStat"
+  ).innerText=
+    testsTaken;
+
+  document.getElementById(
+    "profileTests"
+  ).innerText=
+    testsTaken;
+}
+
+
+function restartQuiz(){
+  openQuiz();
+}
+
+
+/* PROFILE */
+
+function openProfile(){
+
+  document.getElementById(
+    "profileLessons"
+  ).innerText=
+    12+completedLessons;
+
+  document.getElementById(
+    "profileTests"
+  ).innerText=
+    testsTaken;
+
+  openModal("profileModal");
+}
+
+
+/* SEARCH */
+
+function searchContent(){
+
+  const query=
+    document.getElementById(
+      "searchInput"
+    ).value
+    .toLowerCase()
+    .trim();
+
+  document.querySelectorAll(
+    ".searchable"
+  ).forEach(item=>{
+
+    const text=
+      item.innerText.toLowerCase();
+
+    item.style.display=
+      text.includes(query)
+        ?""
+        :"none";
 
   });
 
 }
 
 
-function answer(selected){
+/* NAVIGATION */
 
-  if(selected===quiz[qIndex].a){
+function switchNav(button,type){
 
-    score++;
+  document.querySelectorAll(
+    ".nav-item"
+  ).forEach(item=>{
+    item.classList.remove("active");
+  });
 
-    showToast("✅ Correct!");
+  button.classList.add("active");
+
+  if(type==="courses"){
+
+    document.querySelector(
+      ".course-grid"
+    ).scrollIntoView({
+      behavior:"smooth",
+      block:"center"
+    });
 
   }else{
 
-    showToast("❌ Revise this concept!");
-
-  }
-
-  qIndex++;
-
-  if(qIndex<quiz.length){
-
-    setTimeout(loadQuestion,450);
-
-  }else{
-
-    setTimeout(showResult,450);
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    });
 
   }
 
 }
 
 
-function showResult(){
+/* SOCIAL SCIENCE COURSE OVERRIDE */
 
-  document.getElementById("quizArea")
-    .classList.add("hidden");
+const originalOpenCourse=openCourse;
 
-  document.getElementById("quizResult")
-    .classList.remove("hidden");
+openCourse=function(name,emoji){
 
-  document.getElementById("score")
-    .innerText=
-    score+"/"+quiz.length;
+  currentCourse=name;
 
-  let old=
-    Number(localStorage.getItem("chapter03_progress")||25);
+  document.getElementById(
+    "courseModalTitle"
+  ).innerText=
+    emoji+" "+name;
 
-  let newProgress=
-    Math.min(100,old+5);
+  document.getElementById(
+    "courseName"
+  ).innerText=name;
 
-  localStorage.setItem(
-    "chapter03_progress",
-    newProgress
+  document.getElementById(
+    "courseEmoji"
+  ).innerText=emoji;
+
+  openModal("courseModal");
+};
+
+
+/* OPEN CHAPTER FROM SOCIAL SCIENCE */
+
+document.addEventListener(
+  "click",
+  function(e){
+
+    const button=
+      e.target.closest(".course-btn");
+
+    if(!button)return;
+
+    const card=
+      button.closest(".course");
+
+    if(!card)return;
+
+    const title=
+      card.querySelector("h3");
+
+    if(
+      title &&
+      title.innerText.trim()==="Social Science"
+    ){
+
+      setTimeout(()=>{
+        openDrainageChapter();
+      },50);
+
+    }
+
+  }
+);
+
+
+/* MODAL BACKGROUND */
+
+document.querySelectorAll(
+  ".modal"
+).forEach(modal=>{
+
+  modal.addEventListener(
+    "click",
+    function(e){
+
+      if(e.target===modal){
+        modal.classList.remove("show");
+      }
+
+    }
   );
 
-  updateProgress();
-
-}
+});
 
 
-function restartQuiz(){
+/* ESC */
 
-  openQuiz();
+document.addEventListener(
+  "keydown",
+  function(e){
 
-}
+    if(e.key==="Escape"){
+
+      document.querySelectorAll(
+        ".modal"
+      ).forEach(modal=>{
+        modal.classList.remove("show");
+      });
+
+    }
+
+  }
+);
 
 
-/* =========================
-   INITIALIZE
-========================= */
+/* RESTORE */
 
-updateProgress();
+document.getElementById(
+  "testStat"
+).innerText=
+  testsTaken;
+
+document.getElementById(
+  "lessonStat"
+).innerText=
+  12+completedLessons;
 
 </script>
 
 </body>
-</html>
+  </html>
